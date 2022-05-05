@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Messages</title>
+        <link rel="shortcut icon" href="../assets/icon.ico">
+        <link rel="stylesheet" href="../styleSheets/email.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="nav__container">
+                <!-- <img src="logo" class="logo"> -->
+                <div class="nav__title">
+                    <h4>CyberSec Activity</h4>
+                </div>
+                <nav>                
+                    <ul class="nav__links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <div class="wrapper">
+
+            <div class="container">
+
+                <div class="left">
+
+                    <div class="top">
+                        <input type="text" placeholder="Search" />
+                        <a href="#" class="search"></a>
+                    </div>
+
+                    <ul class="people"> <!-- list of persons and email details -->
+
+                        <!-- Side bar email details button template -->
+                        <li class="person" data-chat="person1"> <!-- increment peroson# with each new email -->
+                            <img src="../assets/userPP.jpg" /> <!-- replace image with user's profile picture -->
+                            <span class="name">Username here</span> <!-- replace with user's username -->
+                            <span class="time">time/date here</span> <!-- replace with email timestamp -->
+                            <span class="subject">Subject here</span> <!-- replace with email subject -->
+                        </li>
+                        <!-- Template end -->
+
+                        <!-- example email-->
+                        <li class="person" data-chat="person2"> <!-- increment peroson# with each new email -->
+                            <img src="../assets/examplePP.jpg" /> <!-- replace image with user's profile picture -->
+                            <span class="name">AlexanderAndCats</span> <!-- replace with user's username -->
+                            <span class="time">04/05/22</span> <!-- replace with email timestamp -->
+                            <span class="subject">Example Email</span> <!-- replace with email subject -->
+                        </li>
+                        <!-- exapmle email end-->
+
+                    </ul>
+
+                </div>
+
+                <div class="right">
+
+                    <div class="top">
+                        <span>From: <span class="name">Username here</span></span> <br> <!-- Change username here to the username of person1-->
+                        <span>Subject: <span class="subject">Subject here</span></span> <!-- Change subject here to the subject of person1--> 
+                    </div>
+
+                    <!-- template email -->
+                    <!-- Email from person1 -->
+                    <div class="chat" data-chat="person1"> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            Email content here.
+                        </p>
+                        
+                    </div>
+                    <!-- end template email -->
+
+                    <!-- example email -->
+                    <div class="chat" data-chat="person2"> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            Hey, <br><br>
+                            This is a simple example email. <br><br>
+                            Yours, <br>
+                            Alexander Goodall
+                        </p>
+                        
+                    </div>
+                    <!-- example email end-->
+
+                    <div class="write">
+                        <a href="#" class="write-link attach"></a>
+                        <input type="text" placeholder="Reply..." />
+                        <a href="#" class="write-link smiley"></a>
+                        <a href="#" class="write-link send"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="../scripts/email.js"></script>
+
+    </body>

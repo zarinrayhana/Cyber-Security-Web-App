@@ -1,0 +1,2 @@
+add functionallity to basically everything
+fix nav bar, it's got the same code on both messages page and smFeed page, I don't know why it breaks differently on both
