@@ -14,7 +14,9 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    background: var(--color-primary);
+    background: var(--reactions-links);
+
+    --reactions-links: #59cbff;
     /* background: url(../assets/background.jpg);
     background-size: cover; */
 

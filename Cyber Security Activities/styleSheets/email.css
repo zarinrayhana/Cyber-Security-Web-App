@@ -28,10 +28,6 @@
 
 body {
     background-color: var(--reactions-links);
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    background-size: cover;
-    background-repeat: none;
     
 }
 
@@ -51,6 +47,9 @@ body {
     height: 75%;
     background-color: var(--white);
     transform: translate(-50%, -50%);
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
 
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
@@ -329,18 +328,19 @@ body {
 
 
 
-
+/* nav bar */
 
 .nav__container {
     font: 500 1rem 'Open Sans', sans-serif;
     width: 80%; 
     margin: 0 auto;
+    padding: 0;
     font-weight: 800;
-    
 }
 
 header {
     background: var(--color-primary-dark);
+    
 }
 
 header::after {

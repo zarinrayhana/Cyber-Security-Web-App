@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background: var(--background);
+    background: var(--reactions-links);
     min-height: 100%;
     font-size: 1.6rem;
     font-family: "Segoe UI", Helvetica, Arial, Helvetica, sans-serif;
@@ -46,6 +46,8 @@ a {
     align-items: center;
     justify-content: center;
     padding: 2rem;
+
+    
 }
 
 /* Post header */
@@ -283,7 +285,7 @@ a {
     width: 80%; 
     margin: 0 auto;
     font-weight: 800;
-    
+    box-shadow: var(--box-shadow);
 }
 
 header {
@@ -296,7 +298,15 @@ header::after {
     clear: both;
 }
 
+.nav__title{
+    font: 500 1rem 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
 nav h4 {
+    font: 500 1rem 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
