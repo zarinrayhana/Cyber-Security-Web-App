@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Messages</title>
+        <link rel="shortcut icon" href="../assets/icon.ico">
+        <link rel="stylesheet" href="emailhard.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="nav__container" >
+                <!-- <img src="logo" class="logo"> -->
+                <div class="nav__title">
+                    <h4>CyberSec Activity</h4>
+                </div>
+                <nav>                
+                    <ul class="nav__links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <!--report button with score-->
+        <div class="wrapper">
+            <div class = 'scoreboard' id = scoreboard1>
+                <div id = 'score'>your score 0</div>
+                <button id = 'reportbutton'>report</button>
+            </div>
+            <div class = 'nextboard' id = nextboard1>
+                <div id = 'nextmessage'>Congratulations you have reached the end!</div>
+                <button id = 'nextbutton'>Finish</button>
+            </div>
+
+            <div class="container">
+
+
+                <div class="left">
+
+                    <div class="top">
+                        <input type="text" placeholder="Search" />
+                        <a href="#" class="search"></a>
+                    </div>
+
+                    <ul class="people"> <!-- list of persons and email details -->
+
+                        <!-- Side bar email details button template -->
+                        <li class="person" data-chat="person1"> <!-- increment peroson# with each new email -->
+                            <img src="jack.png" /> <!-- replace image with user's profile picture -->
+                            <span class="name">Jackstore</span> <!-- replace with user's username -->
+                            <span class="time">21/05/2022</span> <!-- replace with email timestamp -->
+                            <span class="subject">Customer Survey</span> <!-- replace with email subject -->
+                        </li>
+                        <!-- Template end -->
+
+                        <!-- example email-->
+                        <li class="person" data-chat="person2"> <!-- increment peroson# with each new email -->
+                            <img src="snake.png" /> <!-- rep   lace image with user's profile picture -->
+                            <span class="name">CaptainSnake</span> <!-- replace with user's username -->
+                            <span class="time">21/05/2022</span> <!-- replace with email timestamp -->
+                            <span class="subject">code for Snakes?</span> <!-- replace with email subject -->
+
+                        </li>
+                        <li class="person" data-chat="person3"> <!-- increment peroson# with each new email -->
+                            <img src="ingbank.png" /> <!-- replace image with user's profile picture -->
+                            <span class="name">INGBAnk</span> <!-- replace with user's username -->
+                            <span class="time">21/05/2022</span> <!-- replace with email timestamp -->
+                            <span class="subject">Suspicious Activity</span> <!-- replace with email subject -->
+
+                        </li>
+                        <li class="person" data-chat="person4"> <!-- increment peroson# with each new email -->
+                            <img src="cybersec.jpg" /> <!-- replace image with user's profile picture -->
+                            <span class="name" >SecurityHelper</span> <!-- replace with user's username -->
+                            <span class="time">04/05/2022</span> <!-- replace with email timestamp -->
+                            <span class="subject">SecurityHelper Alert</span> <!-- replace with email subject -->
+
+                        </li>
+                        <li class="person" data-chat="person5"> <!-- increment peroson# with each new email -->
+                            <img src="ethical.jpg" /> <!-- replace image with user's profile picture -->
+                            <span class="name" >Ethical Coder</span> <!-- replace with user's username -->
+                            <span class="time">21/05/2022</span> <!-- replace with email timestamp -->
+                            <span class="subject">SecurityHelper Alert</span> <!-- replace with email subject -->
+
+                        </li>
+                        <!-- exapmle email end-->
+
+                    </ul>
+
+                </div>
+
+                <div class="right">
+
+                    <div class="top">
+                        <span>From: <span class="name" id = 'emailname1'>Jackstore</span></span><br> <!-- Change username here to the username of person1-->
+                        <span>Subject: <span class="subject" id = 'emailsubject1'>customer Survey</span></span> <!-- Change subject here to the subject of person1--> 
+                    </div>
+                    
+    
+                    <!-- template email -->
+                    <!-- Email from person1 -->
+                    <div class="chat" data-chat="person1" id = email1cont> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            Hello valued customer, <br>
+                                You purchased something from our online store on 20/05/22. we would like to help improve our user experience, and if you take our short 10 minute survey, not only will you help us, 
+                                you’ll also go in the running for a $10 gift card for our store. <br><br>
+
+                                <span id = goodlink>shorturl.at/pw046</span>><br><br>
+
+                                Thanks for your help, 
+                        </p>
+                        
+                        
+                    </div>
+                    <!-- end template email -->
+
+                    <!-- example email -->
+                    <div class="chat" data-chat="person2" id ='email2cont'> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            Hey! <br><br>
+
+                                Do you want to learn how to make your computer do whatever you want? 
+                                Well, with the power of computer programming you can! I recommend learning python 
+                                if you’re new to computer programming and you can start just by following this link. <br><br>
+                               <span id = 'goodlink1'> https://docs.python.org/3/</span> <br><br>
+                                Good luck, and happy programming! 
+                            
+                        </p>
+                        
+                    </div>
+
+                    <div class="chat" data-chat="person3" id ='emailcont3'> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            Hello Valued Customer, 
+
+                                    Their has been suspicious activity on your bank account. 
+
+                                    Please full out this form with you account number and password to prove you are the account owner. 
+
+                                    <span id = 'badlink'>shorturl.at/etwCT</span> 
+
+                                    Thank you for cooperating. 
+                        </p>
+                    </div>
+                    <div class="chat" data-chat="person4" id = 'email4cont'> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            Hello,<br><br>
+
+                            There has been a series of digital credit card thefts lately, if you think you may have been affected then please follow the link below and enter the details of the card you think might be affected and our database will verify if your card has been stolen. 
+                            
+                            <span id = scamlink>http://www.5z8.info/trojan_dvwt</span><br><br>
+                            
+                            Stay Safe out there. 
+                                    
+                         </p>
+                        </div>
+                        <div class="chat" data-chat="person5" id = 'email5cont'> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                            <p> 
+                                Hey, <br><br>   
+
+                                Have you ever wondered what goes into making a great password?<br><br>
+                                
+                                <span id = 'goodlink2'>shorturl.at/jnxMQ</span> <br><br>
+                                
+                                That’s the answer. Of course, if you just use a password manager instead of making passwords, you’ll have strong passwords and not have to worry about remembering any of them, pretty cool right?<br><br> 
+                                
+                                Yours,<br><br> 
+                                
+                                Ethical Coder
+                                        
+                                        
+                             </p>
+                            </div>
+                    <!-- example email end-->
+
+                    <div class="write">
+                        <a href="#" class="write-link attach"></a>
+                        <input type="text" placeholder="Reply..." />
+                        <a href="#" class="write-link smiley"></a>
+                        <a href="#" class="write-link send"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="emailhard.js"></script>
+
+    </body>
