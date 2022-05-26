@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Messages</title>
+        <link rel="shortcut icon" href="../assets/icon.ico">
+        <link rel="stylesheet" href="../styleSheets/email.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+        
+    </head>
+    
+
+    <body>
+        
+        <header>
+            <div class="nav__container" >
+                <!-- <img src="logo" class="logo"> -->
+                <div class="nav__title">
+                    <h4>Cyber Security Activity</h4>
+                </div>
+                <nav>                
+                    <ul class="nav__links">
+                        <li><a href="smFeed.html">Social Media Feed</a></li>
+                        <li><a href="runme.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <h1>Email Box</h1>
+    
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Due to some major issues with the system, we have disabled many functions of the site until we can fix them. The site is still accessible so that everyone can still access their data. However, there is some issues present even though much of the sites functions disabled, some users have reported receiving posts and viewing posts by people that they shouldn’t.  
+
+We apologise for the inconvenience, we are working on this, and we will have this all fixed as soon as possible. 
+        </div>
+        <div class="wrapper">
+
+            <div class="container">
+
+                <div class="left">
+
+                    <div class="top">
+                        <input type="text" placeholder="Search" />
+                        <a href="#" class="search"></a>
+                    </div>
+
+                    <ul class="people"> <!-- list of persons and email details -->
+
+                        <!-- Side bar email details button template -->
+                        <li class="person" data-chat="person1"> <!-- increment peroson# with each new email -->
+                            <img src="../assets/userMinniMax.png" /> <!-- replace image with user's profile picture -->
+                            <span class="name">MinnieMax</span> <!-- replace with user's username -->
+                            <span class="time"> 29/05/22 </span> <!-- replace with email timestamp -->
+                            <span class="subject">password stuff</span> <!-- replace with email subject -->
+                        </li>
+                        <!-- Template end -->
+
+                        <!-- example email-->
+                        <li class="person" data-chat="person2"> <!-- increment peroson# with each new email -->
+                            <img src="../assets/userBonus.jpg " /> <!-- replace image with user's profile picture -->
+                            <span class="name">BonusChallanger</span> <!-- replace with user's username -->
+                            <span class="time">29/05/22 </span> <!-- replace with email timestamp -->
+                            <span class="subject">Puzzle Number 2 </span> <!-- replace with email subject -->
+                        </li>
+                        <!-- exapmle email end-->
+                        <!-- example email-->
+                        <li class="person" data-chat="person3"> <!-- increment peroson# with each new email -->
+                            <img src="../assets/sysadmin.png" /> <!-- replace image with user's profile picture -->
+                            <span class="name">SystemAdmin</span> <!-- replace with user's username -->
+                            <span class="time">28/05/22 </span> <!-- replace with email timestamp -->
+                            <span class="subject">Security Advice  </span> <!-- replace with email subject -->
+                        </li>
+                        <!-- exapmle email end-->
+
+                    </ul>
+
+                </div>
+
+                <div class="right">
+
+                    <div class="top">
+                        <span>From: <span class="name">Username here</span></span> <br> <!-- Change username here to the username of person1-->
+                        <span>Subject: <span class="subject">Subject here</span></span> <!-- Change subject here to the subject of person1--> 
+                    </div>
+
+                    <!-- template email -->
+                    <!-- Email from person1 -->
+                    <div class="chat" data-chat="person1"> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            hey I heard that you keep forgeting your password so I have some advice your password needs to be strong but easy to remember so it should follow a pattern that you know for example my password pattern is the name of my pet and the year I was born super easy to remember your password should be something like that  
+
+with love 
+
+MinnieMax 
+                             
+                        </p>
+                        
+                    </div>
+                    <!-- end template email -->
+
+                    <!-- example email -->
+                    <div class="chat" data-chat="person2"> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            Hey all, 
+
+I hope you like solving these puzzles as much as I like making them. 
+
+Sounds hot and protects your computer, what is it? 
+
+ 
+
+Until next time, 
+
+BonusChallanger 
+                        </p>
+                        
+                        
+                    </div>
+                    <!-- example email end-->
+ <!-- example email -->
+ <div class="chat" data-chat="person3"> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+    <p> <!-- replace with the content of the email -->
+        Hello all, we have received a lot of users telling us that their password has been stolen, and we take security seriously here and we will look further into improving our security, but in some cases, users have simply been sharing information about their passwords that they shouldn’t have. 
+
+        So please avoid talking about your passwords, or about things that relate to your passwords. 
+        
+        From, 
+        
+        The System Administrator
+    </p>
+    
+    
+</div>
+<!-- example email end-->
+                    <div class="write">
+                        <a href="#" class="write-link attach"></a>
+                        <input type="text" placeholder="Reply..." />
+                        <a href="#" class="write-link smiley"></a>
+                        <a href="#" class="write-link send"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="nextbtn"><a href="index.html" class="next" onclick="scoresubmitmail()">Next &raquo;</a></div>
+        <script src="../scripts/email.js"></script>
+
+    </body>
