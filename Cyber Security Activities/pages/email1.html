@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Messages</title>
+        <link rel="shortcut icon" href="../assets/icon.ico">
+        <link rel="stylesheet" href="../styleSheets/email.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="nav__container">
+                <!-- <img src="logo" class="logo"> -->
+                <div class="nav__title">
+                    <h4>CyberSec Activity</h4>
+                </div>
+                <nav>                
+                    <ul class="nav__links">
+                        <li><a href="smFeed1.html">Home</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="wrapper">
+
+            <div class="container">
+
+                <div class="left">
+
+                    <div class="top">
+                        <input type="text" placeholder="Search" />
+                        <a href="#" class="search"></a>
+                    </div>
+
+                    <ul class="people"> <!-- list of persons and email details -->
+
+                        <!-- email 1-->
+                        <li class="person" data-chat="person1"> <!-- increment peroson# with each new email -->
+                            <img src="../assets/sysadmin.png" /> <!-- replace image with user's profile picture -->
+                            <span class="name">SystemAdmin</span> <!-- replace with user's username -->
+                            <span class="time">30/05/22</span> <!-- replace with email timestamp -->
+                            <span class="subject">Looking For Web Development Work?</span> <!-- replace with email subject -->
+                        </li>
+                        <!-- email 1 end-->
+
+                        <!-- email 2-->
+                        <li class="person" data-chat="person2"> <!-- increment peroson# with each new email -->
+                            <img src="../assets/userMinniMax.png" /> <!-- replace image with user's profile picture -->
+                            <span class="name">MinnieMax</span> <!-- replace with user's username -->
+                            <span class="time">29/05/22</span> <!-- replace with email timestamp -->
+                            <span class="subject">password stuff</span> <!-- replace with email subject -->
+                        </li>
+                        <!-- email 2 end-->
+
+                        <!-- email 3-->
+                        <li class="person" data-chat="person3"> <!-- increment peroson# with each new email -->
+                            <img src="../assets/userBonus.jpg" /> <!-- replace image with user's profile picture -->
+                            <span class="name">BonusChallanger</span> <!-- replace with user's username -->
+                            <span class="time">29/05/22</span> <!-- replace with email timestamp -->
+                            <span class="subject">Puzzle Number 2</span> <!-- replace with email subject -->
+                        </li>
+                        <!-- email 3 end-->
+
+                        <!--  email 4 -->
+                        <li class="person" data-chat="person4"> <!-- increment peroson# with each new email -->
+                            <img src="../assets/sysadmin.png" /> <!-- replace image with user's profile picture -->
+                            <span class="name">SystemAdmin</span> <!-- replace with user's username -->
+                            <span class="time">28/05/22</span> <!-- replace with email timestamp -->
+                            <span class="subject">Security Advice</span> <!-- replace with email subject -->
+                        </li>
+                        <!-- email 4 end-->
+
+                    </ul>
+
+                </div>
+
+                <div class="right">
+
+                    <div class="top">
+                        <span>From: <span class="name">SystemAdmin</span></span> <br> <!-- Change username here to the username of person1-->
+                        <span>Subject: <span class="subject">Looking For Web Development Work?</span></span> <!-- Change subject here to the subject of person1--> 
+                    </div>
+
+                    <!-- Email from person1 -->
+                    <div class="chat" data-chat="person1"> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            As you are probably aware we are currently experiencing some issues and are trying to fix them, to that end we are looking to expand our development team. If you are, or know someone who is, a web developer and are looking for work, please contact us, together we can take this site somewhere great!
+
+                        <br><br>From,
+                        <br>The System Administrator
+
+                        </p>
+                        
+                    </div>
+                    <!-- end email -->
+
+                    <!-- Email from person2 -->
+                    <div class="chat" data-chat="person2"> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            hey I heard that you keep forgeting your password so I have some advice your password needs to be strong but easy to remember so it should follow a pattern that you know for example my password pattern is the name of my pet and the year I was born super easy to remember your password should be something like that 
+                            <br><br>with love
+                            <br>MinnieMax
+
+                        </p>
+                        
+                    </div>
+                    <!-- end email -->
+
+                    <!-- Email from person3 -->
+                    <div class="chat" data-chat="person3"> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            Hey all,
+                            <br>I hope you like solving these puzzles as much as I like making them.
+                            <br>Sounds hot and protects your computer, what is it?
+                            <br>
+                            <br>Until next time,
+                            <br>BonusChallanger
+
+                        </p>
+                        
+                    </div>
+                    <!-- end email -->
+
+                    <!-- Email from person4 -->
+                    <div class="chat" data-chat="person4"> <!-- make sure data-chat lines up with the correct value as the email list -->
+
+                        <p> <!-- replace with the content of the email -->
+                            Hello all, we have received a lot of users telling us that their password has been stolen, and we take security seriously here and we will look further into improving our security, but in some cases, users have simply been sharing information about their passwords that they shouldn’t have.
+                            <br>So please avoid talking about your passwords, or about things that relate to your passwords.
+                            <br><br>From,
+                            <br>The System Administrator
+
+                        </p>
+                        
+                    </div>
+                    <!-- end email -->
+
+                    <div class="write">
+                        <a href="#" class="write-link attach"></a>
+                        <input type="text" placeholder="Reply..." />
+                        <a href="#" class="write-link smiley"></a>
+                        <a href="#" class="write-link send"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="../scripts/email.js"></script>
+
+    </body>

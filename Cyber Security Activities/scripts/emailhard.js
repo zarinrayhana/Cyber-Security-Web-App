@@ -14,7 +14,10 @@ let badlink2 = document.getElementById('scamlink')
 let displaynext = document.getElementById('nextboard1');
 let hidescore = document.getElementsByClassName('scoreboard');
 
-
+function next(){
+    localStorage.setItem('malEmail2', true);
+    window.location.href = 'smFeed End.html', true;
+}
 
 //reassign the ID of subject and name content based on the email also reset the highlights#
 resetclick = function(name,subject){
